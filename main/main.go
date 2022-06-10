@@ -1,17 +1,15 @@
 package main
 
-import "log"
+import "fmt"
 
 func main() {
 
-	a := 10
-	b := 5
+	result := divider(1, 0)
+	fmt.Println("결과는:", result)
 
-	if a-b > 3 {
-		log.Println("True")
-	}
+}
 
-	if a*5 == 50 {
-		panic(1)
-	}
+func divider(a int, b int) int {
+	response := a / b
+	return response
 }
